@@ -1,0 +1,118 @@
+:root {
+    --bg: rgb(26,26,26);
+    --lbg: rgb(42,42,42);
+    --text: rgb(235,235,235);
+    --muted: rgb(140,140,140);
+    --accent: rgb(170,200,210);
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Arial;
+    background: var(--bg);
+    color: var(--text);
+    min-width: 880px;
+}
+
+.container {
+    width: 720px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    min-height: calc(100vh - 140px);
+    background: var(--lbg);
+    border-radius: 20px 30px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.sub {
+    margin: 4px 0 0 0;
+    color: var(--muted);
+}
+
+.intro {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.intro img {
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+.muted {
+    color: var(--muted);
+}
+
+.bloc {
+    margin-bottom: 40px;
+}
+
+.bloc h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    padding: 6px 10px;
+    background: rgb(36,36,36);
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 6px;
+    font-size: 13px;
+    transition-property: background-color, border-color, box-shadow;
+    transition: ease-in-out 400ms;
+}
+
+.tags span:hover {
+    background-color: rgb(48,48,48);
+    border-color: rgb(50, 50, 50);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    transition: ease-in-out 200ms;
+}
+
+.project a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: text-shadow ease-in-out 400ms;
+}
+
+.project a:hover {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    transition: text-shadow ease-in-out 200ms;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+}
+
+.contact a {
+    color: var(--muted);
+    text-decoration: none;
+    transition-property: color, text-shadow;
+    transition: ease-in-out 400ms;
+}
+
+.contact a:hover {
+    color: var(--accent);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    transition: ease-in-out 200ms;
+}
